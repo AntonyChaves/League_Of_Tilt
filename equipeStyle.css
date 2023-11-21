@@ -1,0 +1,118 @@
+
+        /* Estilos para as tabelas com cores diferentes e o menu de navegação (mesmo código de estilo para todas as páginas) */
+    @media screen {
+        
+    
+        
+        body{
+            background-image: url(background.jpeg);
+            background-size: cover;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        nav {
+            text-align: center;
+            
+            color: white;
+            padding: 15px;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            padding: 15px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .card { 
+            width: 300px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 20px 20px 20px rgba(151, 150, 150, 0.2);
+            margin: 20px;
+            padding: 10px;
+            text-align: center;
+            color: #fff;
+        }
+
+        .card img {
+            max-width: 250px;
+            max-height: 250px;
+        }
+
+
+        .card p {
+            font-size: 20px;
+            font-family: 'Courier New', Courier, monospace;
+           
+        }
+
+        .card h3{
+            font-size: 2em;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin: 10px 0;
+        }
+
+        .btn{
+            background: rgba(158, 142, 142, 0.2);
+            opacity: 0.8;
+            color:white;
+            border:none;
+            position:relative;
+            height:60px;
+            font-size:16px;
+            padding:0 20px;
+            cursor:pointer;
+            transition:800ms ease all;
+            outline:none;
+            width: 180px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .btn:hover{
+            background: black;
+            border-left: 1px;
+            border-right: 1px;
+            border-color: #fff;
+            color: #fff;
+        }
+
+        .btn ::before, ::after{
+            content:'';
+            position:absolute;
+            top:0;
+            right:0;
+            height:2px;
+            width:0;
+            background: #1AAB8A;
+            transition:400ms ease all;
+        }
+
+        .btn ::after{
+            right:inherit;
+            top:inherit;
+            left:0;
+            bottom:0;
+        }
+
+        .btn :hover ::before, .btn :hover ::after{
+            width:100%;
+            transition:800ms ease all;
+        }
+
+    }
